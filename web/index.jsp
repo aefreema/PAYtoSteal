@@ -1,6 +1,6 @@
 <%-- 
-    Document   : index
-    Created on : Oct 25, 2014, 6:22:20 PM
+    Document   : products
+    Created on : Oct 26, 2014, 12:12:53 PM
     Author     : Ashley, Yonas, Phat
 --%>
 
@@ -9,32 +9,55 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link href="styles/styles.css" rel="stylesheet"> 
-        <title>Item Page</title>
+        <title>Welcome!</title>
+        <script>
+            function validate(form){
+                
+                var isValid = true;
+          
+                //Check if input is empty
+                if(form.txtNumber.value === ""){
+                    //show error
+                    document.getElementById("errNumber").innerHTML = "Number is required.";
+                    isValid = false;
+                } 
+                
+                //Check if input is non 0 or negative
+                //Append error message (if there was already one).
+                else if(form.txtNumber.value <= 0){
+                    //show error
+                    document.getElementById("errNumber").innerHTML = "Minimum is 1.";
+                    isValid = false;
+                }
+               
+               if(isValid)
+                   form.submit();               
+                    
+                    
+            }
+        </script>
     </head>
     <body>
-        <h1>Pick an item to add to your cart</h1>
-        <form action="cart.jsp" method="post">
-            <table cellspacing="0" cellpadding="20" border="1">
-                <tbody>
-                    <tr>
-                        <td><image src="images/spaceman.jpg" width="50" height="50"></td>
-                        <td class="label">Space Man</td>
-                        <td class="label">Quantity:<input type="text" value="0" name="item1" autocomplete="off"/></td>
-                    </tr>
-                    <tr>
-                        <td><image src="images/nikesymbol.jpg" width="50" height="50"></td>
-                        <td class="label">Nike Symbol</td>
-                        <td class="label">Quantity:<input type="text" value="0" name="item2" autocomplete="off"/></td>
-                    </tr>
-                    <tr>
-                        <td><image src="images/shape.jpg" width="50" height="50"></td>
-                        <td class="label">Diamond</td>
-                        <td class="label">Quantity:<input type="text" value="0" name="item3" autocomplete="off"/></td>
-                    </tr>
-                </tbody>
+        <h1>Welcome to our store!</h1>
+       
+        Please type the number of products you'd like to view.
+        
+        <form action='products.jsp' method="post">
+            
+            <table border='0'>
+                <tr>
+                    <td>Type number:</td>
+                    <td ><input type='text' name='txtNumber' autocomplete="off" />  
+                        <span id='errNumber' class='error'/>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type='button' value="Display products" onclick="validate(this.form)"/></td>
+                </tr>
             </table>
-            <br><input type="submit" value="Add to Cart"/>
+            
         </form>
+        
     </body>
 </html>

@@ -9,14 +9,19 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link href="styles/styles.css" rel="stylesheet"> 
+        <link href="styles/styles.css" rel="stylesheet" type="text/css"/>
         <title>Shopping Cart</title>
     </head>
     <body>
         <% 
             String firstItem = request.getParameter("item1");
+            firstItem = firstItem == null ? "0" : firstItem;
+            
             String secondItem = request.getParameter("item2");
+            secondItem = secondItem == null ? "0" : secondItem;
+            
             String thirdItem = request.getParameter("item3");
+            thirdItem = thirdItem == null ? "0" : thirdItem;
         %>
         <h1>Your Cart</h1>
         <form action="checkout.jsp" method="post">
