@@ -33,7 +33,8 @@
                         + "<td class='label'>Quantity:<input type='text' value='0' name='item3' autocomplete='off'/></td>"
                     + "</tr>";
         %>
-        
+    
+
     </head>
     <body>
         <h1>Pick an item to add to your cart</h1>

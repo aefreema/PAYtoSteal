@@ -8,4 +8,5 @@ and open the template in the editor.
     Author     : Ashley
 */
 
-.error{color: red;};
+.error{color: red; font-style: italic;};
+//td.span.error{color: red; font-size: 6;}
