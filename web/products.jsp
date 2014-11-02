@@ -11,32 +11,6 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="styles/styles.css" rel="stylesheet" type="text/css"/>
         <title>Item Page</title>
-        
-        <% 
-            int itemListLimit = Integer.parseInt(request.getParameter("txtNumber"));
-            
-            //3 is the maximum available items we've currently.
-            String[] item = new String[3];
-            item[0] = "<tr>"
-                        + "<td><image src='images/iphone.jpg' width='75' height='75'></td>"
-                        + "<td class='label'>Apple iPhone</td>"
-                        + "<td class='label'>Price: $199.99 <input type='hidden' value='199.99' name='price1'/></td>"
-                        + "<td class='label'>Quantity:<input type='text' value='0' name='item1' autocomplete='off'/></td>"
-                    + "</tr>";
-            item[1] = "<tr>"
-                        + "<td><image src='images/textbook.jpg' width='75' height='75'></td>"
-                        + "<td class='label'>Textbook </td>"
-                        + "<td class='label'>Price: $100.00 <input type='hidden' value='100.00' name='price2'/></td>"
-                        + "<td class='label'>Quantity:<input type='text' value='0' name='item2' autocomplete='off'/></td>"
-                    + "</tr>";
-            item[2] = "<tr>"
-                        + "<td><image src='images/fan.jpg' width='75' height='75'></td>"
-                        + "<td class='label'>Desk Fan</td>"
-                        + "<td class='label'>Price: $23.99 <input type='hidden' value='23.99' name='price3'/></td>"
-                        + "<td class='label'>Quantity:<input type='text' value='0' name='item3' autocomplete='off'/></td>"
-                    + "</tr>";
-        %>
-        
     </head>
     <body>
 
@@ -59,7 +33,19 @@
 
         <!-- end .header --></div>
       <div class="content">
-        <h1>&nbsp;</h1>
+        <%@ page import="product.*"%>
+        <% 
+            int itemListLimit = Integer.parseInt(request.getParameter("txtNumber"));
+            
+            Item[] items = {new Item("images/iphone.jpg","Apple iPhone","199.99"), 
+                            new Item("images/textbook.jpg","Textbook","100.00"),
+                            new Item("images/fan.jpg","Desk Fan","23.99")};
+            
+            String[] name = {"item1", "item2", "item3"};
+            String[] price = {"price1","price2","price3"};
+        
+        %>
+        
         <h1>Pick an item to add to your cart</h1>
         <form action="cart.jsp" method="post">
             <table border="1" align="center" cellpadding="20" cellspacing="0">
@@ -72,11 +58,11 @@
                         //take the size of the item[] array.
                         //and show a message to the customer.
                         String msg = "";
-                        if(itemListLimit > item.length)
+                        if(itemListLimit > items.length)
                         {
-                            itemListLimit = item.length;
+                            itemListLimit = items.length;
                             msg = "You requested " + itemListLimit + " items to be listed. </br>"
-                                     + "Sorry, we only have "+ item.length +" this time. Check us back soon!";
+                                     + "Sorry, we only have "+ items.length +" this time. Check us back soon!";
                                 
                         }                       
                         
@@ -84,7 +70,12 @@
                         for(int i = 0; i< itemListLimit; i++)
                         {
                             %>
-                                <%= item[i]%>
+                            <tr>
+                                <td><image src='<%= items[i].getImgSrc()%>' width='75' height='75'></td>
+                                <td class='label'><%= items[i].getItemName() %></td>
+                                <td class='label'>Price: $<%= items[i].getPrice() %> <input type='hidden' value='<%= items[i].getPrice() %>' name='<%= price[i]%>'/></td>
+                                <td class='label'>Quantity:<input type='text' value='0' name=<%= name[i] %> autocomplete='off'/></td>
+                            </tr>
                             <%
                         }
                     %>
@@ -93,7 +84,7 @@
                 <span class="error">
                     <%= msg%>
                 </span>
-                    
+                                  
             <br><input type="submit" value="Add to Cart"/>
         </form>
         <!-- end .content --></div>
