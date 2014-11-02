@@ -18,23 +18,25 @@
             //3 is the maximum available items we've currently.
             String[] item = new String[3];
             item[0] = "<tr>"
-                        + "<td><image src='images/spaceman.jpg' width='50' height='50'></td>"
-                        + "<td class='label'>Space Man</td>"
+                        + "<td><image src='images/iphone.jpg' width='75' height='75'></td>"
+                        + "<td class='label'>Apple iPhone</td>"
+                        + "<td class='label'>Price: $199.99 <input type='hidden' value='199.99' name='price1'/></td>"
                         + "<td class='label'>Quantity:<input type='text' value='0' name='item1' autocomplete='off'/></td>"
                     + "</tr>";
             item[1] = "<tr>"
-                        + "<td><image src='images/nikesymbol.jpg' width='50' height='50'></td>"
-                        + "<td class='label'>Nike Symbol</td>"
+                        + "<td><image src='images/textbook.jpg' width='75' height='75'></td>"
+                        + "<td class='label'>Textbook </td>"
+                        + "<td class='label'>Price: $100.00 <input type='hidden' value='100.00' name='price2'/></td>"
                         + "<td class='label'>Quantity:<input type='text' value='0' name='item2' autocomplete='off'/></td>"
                     + "</tr>";
             item[2] = "<tr>"
-                        + "<td><image src='images/shape.jpg' width='50' height='50'></td>"
-                        + "<td class='label'>Diamond</td>"
+                        + "<td><image src='images/fan.jpg' width='75' height='75'></td>"
+                        + "<td class='label'>Desk Fan</td>"
+                        + "<td class='label'>Price: $23.99 <input type='hidden' value='23.99' name='price3'/></td>"
                         + "<td class='label'>Quantity:<input type='text' value='0' name='item3' autocomplete='off'/></td>"
                     + "</tr>";
         %>
-    
-
+        
     </head>
     <body>
         <h1>Pick an item to add to your cart</h1>

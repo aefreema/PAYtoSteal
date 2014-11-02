@@ -29,23 +29,38 @@
                 <tbody>
                     <tr>
                         <% if (!(firstItem.equals("0"))) { %>
-                            <td><image src="images/spaceman.jpg" width="50" height="50"></td>
-                            <td class="label">Space Man</td>
+                            <td><image src="images/iphone.jpg" width="75" height= "75"></td>
+                            <td class="label">Textbook</td>
+                            <td class='label'>Price: $<%= request.getParameter("price1")%> <input type='hidden' value='<%= request.getParameter("price1")%>' name='price1'/></td>
                             <td class="label">Quantity:<input type="text" value=<%= firstItem %> name="item1" autocomplete="off"/></td>
+                        <%}
+                        else { %>
+                            <input type="hidden" value="0" name="item1"/>
+                            <input type="hidden" value="0" name="price1"/>
                         <%}%>
                     </tr>
                     <tr>
                         <% if (!(secondItem.equals("0"))) { %>
-                            <td><image src="images/nikesymbol.jpg" width="50" height="50"></td>
-                            <td class="label">Nike Symbol</td>
+                            <td><image src="images/textbook.jpg" width="75" height= "75"></td>
+                            <td class="label">Textbook</td>
+                            <td class='label'>Price: $<%= request.getParameter("price2")%> <input type='hidden' value='<%= request.getParameter("price2")%>' name='price2'/></td>
                             <td class="label">Quantity:<input type="text" value=<%= secondItem %> name="item2" autocomplete="off"/></td>
+                        <%}
+                        else { %>
+                            <input type="hidden" value="0" name="item2"/>
+                            <input type="hidden" value="0" name="price2"/>
                         <%}%>
                     </tr>
                     <tr>
                         <% if (!(thirdItem.equals("0"))) { %>
-                            <td><image src="images/shape.jpg" width="50" height="50"></td>
-                            <td class="label">Diamond</td>
+                            <td><image src="images/fan.jpg" width="75" height="75"></td>
+                            <td class="label">Desk Fan</td>
+                            <td class='label'>Price: $<%= request.getParameter("price3")%> <input type='hidden' value='<%= request.getParameter("price3")%>' name='price3'/></td>
                             <td class="label">Quantity:<input type="text" value=<%= thirdItem %> name="item3" autocomplete="off"></td>
+                        <%}
+                        else { %>
+                            <input type="hidden" value="0" name="item3"/>
+                            <input type="hidden" value="0" name="price3"/>
                         <%}%>
                     </tr>
                 </tbody>
