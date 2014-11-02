@@ -39,9 +39,30 @@
         
     </head>
     <body>
+
+    <div class="container">
+        <table width="100" border="0" align="right">
+            <tr>
+              <td>Account</td>
+              <td><form name="form1" method="post" action="">
+                <input type="text" name="acctName" id="acctName">
+              </form></td>
+            </tr>
+            <tr>
+              <td>Password</td>
+              <td><form name="form2" method="post" action="">
+                <input type="text" name="password" id="password">
+              </form></td>
+            </tr>
+          </table>
+          <div class="header"><a href="index.jsp"><img src="images/StoreLogo.png" alt="Store Logo Here" name="Store_logo" width="342" height="123" id="Store_logo" style="background: #FFF; display:block;" /></a>
+
+        <!-- end .header --></div>
+      <div class="content">
+        <h1>&nbsp;</h1>
         <h1>Pick an item to add to your cart</h1>
         <form action="cart.jsp" method="post">
-            <table cellspacing="0" cellpadding="20" border="1">
+            <table border="1" align="center" cellpadding="20" cellspacing="0">
                 <tbody>
                     <%
                         //now display products per the list limit submitted from
@@ -75,5 +96,10 @@
                     
             <br><input type="submit" value="Add to Cart"/>
         </form>
+        <!-- end .content --></div>
+      <div class="footer">
+        <p>&nbsp;</p>
+        <!-- end .footer --></div>
+      <!-- end .container --></div>
     </body>
 </html>

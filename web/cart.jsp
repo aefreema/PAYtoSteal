@@ -12,8 +12,28 @@
         <link href="styles/styles.css" rel="stylesheet" type="text/css"/>
         <title>Shopping Cart</title>
     </head>
+    
     <body>
-        <% 
+        <div class="container">
+            <table width="100" border="0" align="right">
+            <tr>
+              <td>Account</td>
+              <td><form name="form1" method="post" action="">
+                <input type="text" name="acctName" id="acctName">
+              </form></td>
+            </tr>
+            <tr>
+              <td>Password</td>
+              <td><form name="form2" method="post" action="">
+                <input type="text" name="password" id="password">
+              </form></td>
+            </tr>
+        </table>
+        <div class="header"><a href="index.jsp"><img src="images/StoreLogo.png" alt="Store Logo Here" name="Store_logo" width="342" height="123" id="Store_logo" style="background: #FFF; display:block;" /></a>
+
+           <!-- end .header --></div>
+        <div class="content">
+            <% 
             String firstItem = request.getParameter("item1");
             firstItem = firstItem == null ? "0" : firstItem;
             
@@ -25,7 +45,7 @@
         %>
         <h1>Your Cart</h1>
         <form action="checkout.jsp" method="post">
-            <table cellspacing="0" cellpadding="20" border="1">
+            <table border="1" align="center" cellpadding="20" cellspacing="0">
                 <tbody>
                     <tr>
                         <% if (!(firstItem.equals("0"))) { %>
@@ -72,5 +92,12 @@
                 <td><br><input type="button" value="Continue Shopping" onclick="form.submit()"/></td>
             </tr>
         </form>
+        <!-- end .content --></div>
+        <div class="footer">
+            <p>&nbsp;</p>
+        <!-- end .footer --></div>
+        <!-- end .container --></div>
+
+        
     </body>
 </html>

@@ -39,13 +39,33 @@
         </script>
     </head>
     <body>
-        <h1>Welcome to our store!</h1>
-       
-        Please type the number of products you'd like to view.
         
-        <form action='products.jsp' method="post">
+        <div class="container">
+        <table width="100" border="0" align="right">
+            <tr>
+              <td>Account</td>
+              <td><form name="form1" method="post" action="">
+                <input type="text" name="acctName" id="acctName">
+              </form></td>
+            </tr>
+            <tr>
+              <td>Password</td>
+              <td><form name="form2" method="post" action="">
+                <input type="text" name="password" id="password">
+              </form></td>
+            </tr>
+          </table>
+          <div class="header"><a href="index.jsp"><img src="images/StoreLogo.png" alt="Store Logo Here" name="Store_logo" width="342" height="123" id="Store_logo" style="background: #FFF; display:block;" /></a>
+        
+ 
+            <div class="content">
+            <h1>Welcome to our store!</h1>
+       
+            <p>Please type the number of products you'd like to view.</p>
+        
+            <form action='products.jsp' method="post">
             
-            <table border='0'>
+            <table border='0' align="center" cellpadding="2" cellspacing="2">
                 <tr>
                     <td>Type number:</td>
                     <td ><input type='text' name='txtNumber' autocomplete="off" />  
@@ -59,6 +79,9 @@
             </table>
             
         </form>
-        
+            <!-- end .content --></div>
+            <div class="footer"> copyright@ Phat Ashley Yonas            <!-- end .footer --> (try replacing with snippet)      </div>
+    <!-- end .container --></div>
+
     </body>
 </html>
