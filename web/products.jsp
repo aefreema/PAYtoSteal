@@ -11,6 +11,26 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="styles/styles.css" rel="stylesheet" type="text/css"/>
         <title>Item Page</title>
+        
+        <script>
+            function validate(form){
+                
+                var isValid = true;
+          
+                //Check if quantity is set
+                if((form.item1.value + form.item2.value + form.item3.value )==0){
+                    //show error
+                    document.getElementById("errNumber").innerHTML = "Please set quantity for the product you'd like to add to the cart.";
+                    isValid = false;
+                } 
+                
+                if(isValid)
+                    form.submit(); 
+               
+            }
+            
+        </script>
+        
     </head>
     <body>
 
@@ -60,13 +80,15 @@
                         String msg = "";
                         if(itemListLimit > items.length)
                         {
-                            itemListLimit = items.length;
+                            //itemListLimit = items.length; yonas: moved this down as the message below needs 
+                            //to display the original #of products the user requested to view.
                             msg = "You requested " + itemListLimit + " items to be listed. </br>"
                                      + "Sorry, we only have "+ items.length +" this time. Check us back soon!";
                                 
                         }                       
                         
                         
+                        itemListLimit = items.length;
                         for(int i = 0; i< itemListLimit; i++)
                         {
                             %>
@@ -81,11 +103,11 @@
                     %>
                 </tbody>
             </table>
-                <span class="error">
+                <span id="errNumber" class="error">
                     <%= msg%>
                 </span>
                                   
-            <br><input type="submit" value="Add to Cart"/>
+            <br><input type='button' value="Add to Cart" onclick="validate(this.form)"/>
         </form>
         <!-- end .content --></div>
       <div class="footer">
