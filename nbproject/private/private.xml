@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/aefre/Documents/NetBeansProjects/PAYtoSteal-PAY-Branch/web/images/noItem.png</file>
+            <file>file:/C:/Users/aefre/Documents/NetBeansProjects/PAYtoSteal-PAY-Branch/src/java/apputil/AppUtil.java</file>
+            <file>file:/C:/Users/aefre/Documents/NetBeansProjects/PAYtoSteal-PAY-Branch/src/java/dbutil/DBUtil.java</file>
+            <file>file:/C:/Users/aefre/Documents/NetBeansProjects/PAYtoSteal-PAY-Branch/web/images/back.jpg</file>
+            <file>file:/C:/Users/aefre/Documents/NetBeansProjects/PAYtoSteal-PAY-Branch/web/productsPg.jsp</file>
+            <file>file:/C:/Users/aefre/Documents/NetBeansProjects/PAYtoSteal-PAY-Branch/src/java/admin/AdminServlet.java</file>
+            <file>file:/C:/Users/aefre/Documents/NetBeansProjects/PAYtoSteal-PAY-Branch/src/java/product/Cart.java</file>
+            <file>file:/C:/Users/aefre/Documents/NetBeansProjects/PAYtoSteal-PAY-Branch/web/customer.jsp</file>
+            <file>file:/C:/Users/aefre/Documents/NetBeansProjects/PAYtoSteal-PAY-Branch/web/index.jsp</file>
+            <file>file:/C:/Users/aefre/Documents/NetBeansProjects/PAYtoSteal-PAY-Branch/src/java/product/Item.java</file>
+            <file>file:/C:/Users/aefre/Documents/NetBeansProjects/PAYtoSteal-PAY-Branch/web/styles/styles.css</file>
+            <file>file:/C:/Users/aefre/Documents/NetBeansProjects/PAYtoSteal-PAY-Branch/web/images/00004.jpg</file>
+            <file>file:/C:/Users/aefre/Documents/NetBeansProjects/PAYtoSteal-PAY-Branch/src/java/dbutil/ConnectionPool.java</file>
+            <file>file:/C:/Users/aefre/Documents/NetBeansProjects/PAYtoSteal-PAY-Branch/web/includes/footer.jsp</file>
+            <file>file:/C:/Users/aefre/Documents/NetBeansProjects/PAYtoSteal-PAY-Branch/web/styles/animate.css</file>
+            <file>file:/C:/Users/aefre/Documents/NetBeansProjects/PAYtoSteal-PAY-Branch/src/java/dbutil/Order.java</file>
+            <file>file:/C:/Users/aefre/Documents/NetBeansProjects/PAYtoSteal-PAY-Branch/web/images/00005.jpg</file>
+            <file>file:/C:/Users/aefre/Documents/NetBeansProjects/PAYtoSteal-PAY-Branch/src/java/servlet/PaymentServlet.java</file>
+            <file>file:/C:/Users/aefre/Documents/NetBeansProjects/PAYtoSteal-PAY-Branch/web/cart.jsp</file>
+            <file>file:/C:/Users/aefre/Documents/NetBeansProjects/PAYtoSteal-PAY-Branch/src/java/servlet/IndexServlet.java</file>
+            <file>file:/C:/Users/aefre/Documents/NetBeansProjects/PAYtoSteal-PAY-Branch/web/images/00001.jpg</file>
+            <file>file:/C:/Users/aefre/Documents/NetBeansProjects/PAYtoSteal-PAY-Branch/web/images/StoreLogo.png</file>
+            <file>file:/C:/Users/aefre/Documents/NetBeansProjects/PAYtoSteal-PAY-Branch/src/java/servlet/ProdPgServlet.java</file>
+            <file>file:/C:/Users/aefre/Documents/NetBeansProjects/PAYtoSteal-PAY-Branch/web/checkout.jsp</file>
+            <file>file:/C:/Users/aefre/Documents/NetBeansProjects/PAYtoSteal-PAY-Branch/src/java/servlet/CheckoutServlet.java</file>
+            <file>file:/C:/Users/aefre/Documents/NetBeansProjects/PAYtoSteal-PAY-Branch/src/java/customer/Customer.java</file>
+            <file>file:/C:/Users/aefre/Documents/NetBeansProjects/PAYtoSteal-PAY-Branch/src/java/servlet/CustomerServlet.java</file>
+            <file>file:/C:/Users/aefre/Documents/NetBeansProjects/PAYtoSteal-PAY-Branch/src/java/servlet/CartServlet.java</file>
+            <file>file:/C:/Users/aefre/Documents/NetBeansProjects/PAYtoSteal-PAY-Branch/web/images/00006.jpg</file>
+            <file>file:/C:/Users/aefre/Documents/NetBeansProjects/PAYtoSteal-PAY-Branch/web/images/noThief.gif</file>
+            <file>file:/C:/Users/aefre/Documents/NetBeansProjects/PAYtoSteal-PAY-Branch/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/aefre/Documents/NetBeansProjects/PAYtoSteal-PAY-Branch/web/images/00002.jpg</file>
+            <file>file:/C:/Users/aefre/Documents/NetBeansProjects/PAYtoSteal-PAY-Branch/web/images/cards.png</file>
+            <file>file:/C:/Users/aefre/Documents/NetBeansProjects/PAYtoSteal-PAY-Branch/web/includes/header.jsp</file>
+            <file>file:/C:/Users/aefre/Documents/NetBeansProjects/PAYtoSteal-PAY-Branch/web/orderConfirm.jsp</file>
+            <file>file:/C:/Users/aefre/Documents/NetBeansProjects/PAYtoSteal-PAY-Branch/web/images/00007.jpg</file>
+            <file>file:/C:/Users/aefre/Documents/NetBeansProjects/PAYtoSteal-PAY-Branch/src/java/product/LineItem.java</file>
+            <file>file:/C:/Users/aefre/Documents/NetBeansProjects/PAYtoSteal-PAY-Branch/web/images/cart.png</file>
+            <file>file:/C:/Users/aefre/Documents/NetBeansProjects/PAYtoSteal-PAY-Branch/web/images/bkgd_steal.jpg</file>
+            <file>file:/C:/Users/aefre/Documents/NetBeansProjects/PAYtoSteal-PAY-Branch/web/images/00003.jpg</file>
+        </group>
+    </open-files>
+</project-private>

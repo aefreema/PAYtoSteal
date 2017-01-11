@@ -1,0 +1,78 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 25, 2014, 8:17:07 PM
+    Author     : Ashley Phat Yonas
+*/
+
+.error{color: red; font-style: italic;};
+body{
+	
+
+}
+.background{
+    background-image: url(../images/burglar.jpg);
+    background-repeat: repeat;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 0px;
+	padding-left: 0px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	text-align: center;
+	
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+	text-align: center;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 800px;
+	
+	background: #FFF;
+	margin-left: auto;
+	margin-right: auto;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	
+	border: medium double #009;
+}
+
+.header {
+	background: #FFF;
+	
+	alignment-adjust: middle;
+
+}
+.content {
+        height: 600px;
+	padding: 10px 0;
+	text-align: center;
+}
+.footer {
+	padding: 10px 0;
+	text-align: left;
+	font-size: x-small;
+	
+}
+.timer{
+    font-style: bold;
+    color: red;
+}
+
+
